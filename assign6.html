@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+      JSON Code
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+  $(document).ready(function() {
+    $.get("https://github.com/dhizzybusy/Assign6/blob/main/wines.json", function(data) {
+      var wines_data = '';
+      $.each(data, function(key, value) {
+        wines_data += '<tr>';
+        wines_data += '<td>' + value.Wine + '</td>';
+        wines_data += '<td>' + value.Origin + '</td>';
+        wines_data += '<td>' + value.Taste + '</td>';
+        wines_data += '<td>' + value.Pairing + '</td>';
+        wines_data += '</tr>';
+      });
+      $('#wines_table').append(wines_data);
+
+    });
+  });
+
+</script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="table-responsive">
+        <h1>JSON Data</h1>
+        <br />
+        <table class="table table-bordered table-striped" id="wines_table">
+          <tr>
+            <th>Wine</th>
+            <th>Origin</th>
+            <th>Taste</th>
+            <th>Pairing</th>
+          <tr>
+        </table>
+      </div>
+    </div>
+  </body>
+
+</html>
+
+
