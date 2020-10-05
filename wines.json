@@ -1,0 +1,30 @@
+[
+	{
+			"Wine": "Riesling",
+			"Origin": "Germany",
+			"Taste": "Fruity",
+			"Pairing": "Chicken, Pork, Duck"
+		},
+
+		{
+			"Wine": "Pinot Gris",
+			"Origin": "France",
+			"Taste": "Fruity",
+			"Pairing": "Salad, Mild and Light Cheese"
+		},
+
+		{
+			"Wine": "Sauvignon Blac",
+			"Origin": "France",
+			"Taste": "Fruity",
+			"Pairing": "Fish, Chicken, Veal"
+		},
+
+		{
+			"Wine": "Chardonnay",
+			"Origin": "France",
+			"Taste": "Fruity",
+			"Pairing": "Lobster, Crab, Shrimp"
+		}
+]
+
